@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Title & Meta Tags -->
+    <title>Otto's Meta-Dump</title> 
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="author" content="Otto King-Hoffmann">
+   	<!-- Base Definition [Points to Site Root] -->
+    <base href="">
+    <!-- Bootstrap CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/bootstrap-reboot.min.css" rel="stylesheet">
+    <link href="css/bootstrap-reboot.css" rel="stylesheet">
+    <link href="css/bootstrap-grid.min.css" rel="stylesheet">
+    <link href="css/bootstrap-grid.css" rel="stylesheet">
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="image/ico" href=img/favicon.ico>
+  </head>
+
+  <body>
+  	<!--BEGIN NAVBAR-->
+	<nav class="navbar navbar-expand-lg navbar-dark" style="background-color:  #2e86c1 ">
+	  	<a class="navbar-brand" href="">Otto King-Hoffmann</a>
+	  	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+	    	<span class="navbar-toggler-icon"></span>
+	  	</button>
+ 		<div class="collapse navbar-collapse" id="navbarSupportedContent">
+	    	<ul class="navbar-nav mr-auto">
+			   	<li class="nav-item active">
+			    	<a class="nav-link" href="http://www.OttoKH.com">Home<span class="sr-only">(current)</span></a>
+			    </li>
+		      	<li class="nav-item">
+		        	<a class="nav-link" href="">Experience</a>
+		      	</li>
+	      		<li class="nav-item dropdown">
+	        		<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Programs</a> 
+	        		<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+	          			<a class="dropdown-item">Warframe Assistant</a>
+	          			<a class="dropdown-item" href="">Bad Manners</a>
+	          			<div class="dropdown-divider"></div>
+	          			<a class="dropdown-item" href="">All Programs</a>
+	        		</div>
+	      		</li>
+	      		<li class="nav-item">
+	        		<a class="nav-link" href="">About Me</a>
+	      		</li>
+	    	</ul>
+    		<!-- Contact Me Button -->
+			<form class="form-inline my-2 my-lg-0">
+  				<button class="btn btn-outline-dark" type="button" data-toggle="modal" data-target="#ContactForm">Contact Me</button>
+			</form>		
+			<!-- Contact Form -->
+			<div class="modal fade" id="ContactForm" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+	  			<div class="modal-dialog" role="document">
+		  			<form method="post" action="send_mail.php" target="votar">
+			    		<div class="modal-content">
+			      		<div class="modal-header">
+				        	<h5 class="modal-title" id="exampleModalLabel">Contact Me</h5>
+				        	<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+				          		<span aria-hidden="true">&times;</span>
+				        	</button>
+			      		</div>
+			      		<div class="modal-body">			        
+					  		<div class="form-group">
+					    		<label for="Name">Your Name</label>
+					    		<input type="Name" class="form-control" id="Name" name="Name" placeholder="John Doe">
+					  		</div>
+					  		<div class="form-group">
+					    		<label for="EmailAddress">Your Email address</label>
+					    		<input type="email" class="form-control" id="EmailAddress" name="EmailAddress" aria-describedby="emailHelp" placeholder="JohnDoe@example.com">
+					    		<small id="emailHelp" class="form-text text-muted">This is so I can get back in touch with you</small>
+					  		</div>
+					  		<div class="form-group">
+					    		<label for="Message">Message</label>
+    							<textarea class="form-control" id="Message" name="Message" rows="3" placeholder="Compose your message here..."></textarea>
+  							</div>				
+			      		</div>
+			      		<div class="modal-footer">
+			        		<button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+			        		<button type="submit" class="btn btn-primary" data-dismiss="modal">Submit</button>
+			      		</div>
+			      		</div>
+		  			</form>
+		  			<iframe name="votar" style="display:none;"></iframe>
+
+	  			</div>
+	 		</div>
+		</div>
+	</nav>
+	<!--END NAVBAR-->
+
+	<h1>MAIN PAGE</h1>
+
+    <!-- JavaScript/JQuery Calls -->
+    <script src="scripts/jquery-3.3.1.slim.min.js"></script>
+    <script src="scripts/popper.min.js"></script>
+    <script src="scripts/bootstrap.min.js"></script>
+  </body>
+</html>
+<!-- Removes 000webhost Branding -->
+<script>
+   	$(document).ready(function(){ 
+		$('body').find('img[src$="https://cdn.rawgit.com/000webhost/logo/e9bd13f7/footer-powered-by-000webhost-white2.png"]').remove();
+    }); 
+</script>
